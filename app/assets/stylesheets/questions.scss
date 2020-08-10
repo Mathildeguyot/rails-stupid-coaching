@@ -1,0 +1,48 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-family: roboto, sans-serif;
+}
+
+p {
+  font-family: roboto, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+form {
+  display: flex;
+  border-radius: 5px;
+  #question {
+    width: 500px;
+    padding: 10px 0px;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px 0px 0px 5px;
+  }
+  #submit {
+    width: 100px;
+    background-color: #337AB7;
+    color: white;
+    font-family: roboto, sans-serif;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: roboto, sans-serif;
+  color: #337AB7;
+}
+
+#displayed-answer {
+  background-color: #FFFFE1;
+  padding: 15px;
+  border-left: solid 7px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+#displayed-question {
+  padding: 15px;
+  border-left: solid 7px rgba(0, 0, 0, 0.2);
+}

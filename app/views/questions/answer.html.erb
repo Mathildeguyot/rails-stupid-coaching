@@ -1,0 +1,16 @@
+<h1>Stupid Coaching</h1>
+<div id="displayed-question">
+  <p><%= @question %></p>
+  <p><em><%= "- You" %></em></p>
+</div>
+<div id="displayed-answer">
+  <% if @question == "I am going to work" %>
+    <p><strong><%= "Great!" %></strong></p>
+  <% elsif @question.include?("?") %>
+    <p><strong><%= "Silly question, get dressed and go to work!" %></strong></p>
+  <% else %>
+    <p><strong><%= "I don't care, get dressed and go to work!" %></strong></p>
+  <% end %>
+  <p><em><%= "Your coach!" %></em></p>
+</div>
+<p id="link"><%= link_to "Ask something else", ask_path %></p>
